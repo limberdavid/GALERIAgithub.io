@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMBER | Creative Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+    <div class="brand">
+        <span class="dot"></span>
+        <h1>LIMBER</h1>
+    </div>
+    <p>Creative Visual Experience</p>
+</header>
+
+<!-- CONTENEDOR -->
+<main class="container">
+
+    <!-- CONTROLES -->
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Buscar inspiración...">
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="naturaleza">Naturaleza</button>
+            <button class="filter-btn" data-filter="ciudad">Ciudad</button>
+            <button class="filter-btn" data-filter="arte">Arte</button>
+            <button class="filter-btn" data-filter="tecnologia">Tech</button>
+        </div>
+
+        <div class="view-toggle">
+            <button class="view-btn active" data-view="grid">▦</button>
+            <button class="view-btn" data-view="list">☰</button>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+        Mostrando <strong id="imageCount">0</strong> imágenes
+    </div>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="gallery"></section>
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <button class="close">✕</button>
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+
+    <div class="lightbox-body">
+        <img id="lightboxImg">
+        <h3 id="lightboxTitle"></h3>
+        <span id="lightboxCategory"></span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
